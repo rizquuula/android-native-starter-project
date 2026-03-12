@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="device.xml"/>
+        <exclude domain="database" path="device.db"/>
+        <exclude domain="database" path="device.db-shm"/>
+        <exclude domain="database" path="device.db-wal"/>
+        <exclude domain="file" path="device.xml"/>
+    </cloud-backup>
+</data-extraction-rules>
