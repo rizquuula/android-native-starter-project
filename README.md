@@ -21,6 +21,60 @@ A minimal Android starter project with Kotlin and Jetpack Compose.
 - JDK 17
 - Android SDK 34
 
+## Setup
+
+### Option 1: Android Studio (Recommended)
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/rizquuula/android-native-starter-project.git
+   cd android-native-starter-project
+   ```
+
+2. **Open in Android Studio**
+   - File → Open → Select project directory
+   - Wait for Gradle sync to complete
+
+3. **Run**
+   - Connect device or start emulator
+   - Click Run (Shift+F10)
+
+### Option 2: Command Line
+
+1. **Install prerequisites**
+   ```bash
+   # Install Android SDK (if not using Android Studio)
+   # Download from: https://developer.android.com/studio#command-tools
+   ```
+
+2. **Configure SDK path**
+   Create `local.properties` in project root:
+   ```
+   sdk.dir=/path/to/Android/Sdk
+   ```
+   
+   On Windows:
+   ```
+   sdk.dir=C\:\\Users\\YourName\\AppData\\Local\\Android\\Sdk
+   ```
+
+3. **Set JAVA_HOME** (if needed)
+   ```bash
+   export JAVA_HOME="D:/AndroidStudio/Studio/jbr"
+   export PATH="$JAVA_HOME/bin:$PATH"
+   ```
+
+4. **Build**
+   ```bash
+   make debug
+   ```
+
+### Troubleshooting
+
+- **Gradle download failed**: Server may be temporarily unavailable. Retry or download manually from [gradle.org](https://gradle.org/)
+- **SDK not found**: Ensure `local.properties` has correct SDK path
+- **Java not found**: Set `JAVA_HOME` to Android Studio bundled JDK or standalone JDK 17+
+
 ## Quick Start
 
 ### Build
